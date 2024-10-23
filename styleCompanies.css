@@ -84,7 +84,7 @@ nav ul li:hover {
 /*debut de style de aside formulaire_de_filtrage*/
 .filtre{
     width: 30vw;
-    height: 66vh;
+    height: 90vh;
     border: 1px solid;
     border-radius: 5%;
     padding: 5px;
@@ -145,6 +145,23 @@ nav ul li:hover {
   .formulaire_de_filtrage .job_type input[type="radio"]:checked + label {
     background-color: #70ff4d;
     border-radius: 32px;
+  }
+  .formulaire_de_filtrage .button_filtre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    height: 14vh;
+
+  }
+  .formulaire_de_filtrage button{
+    background-color: #70FF4D;
+    width: 85%;
+    height: 80%;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size:26px;
   }
 
 
