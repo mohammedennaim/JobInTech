@@ -8,6 +8,8 @@
   </head>
   <body>
     <!--------------------- Debut de code html --------------------->
+
+    <!--------------------- Debut de header --------------------->
     <header>
       <nav>
         <img src="images&videos Community/logo.png" alt="logo" />
@@ -27,6 +29,10 @@
         </div>
       </nav>
     </header>
+
+    <!--------------------- fin de header --------------------->
+
+    <!--------------------- deut de titre et bar de recherche --------------------->
     <aside class="titr_end_bar_recherche">
       <div class="titre_companies">
         <h1>Explore companies</h1>
@@ -37,23 +43,41 @@
         <button>Search</button>
       </div>
     </aside>
+    <!--------------------- fin de titre et bar de recherche --------------------->
+
+    <!--------------------- deut de formulaire de filtre --------------------->
     <aside class="filtre">
       <form class="formulaire_de_filtrage">
         <h2>Filter Companies</h2>
-        <label for="location">Location</label>
-        <input type="text" id="Location" placeholder="Select a location">
-        <label for="domaine">Domaine</label>
-        <input type="text" id="domaine" placeholder="Informatoque,Designe...">
-        <label for="job_title">Job Title</label>
-        <input type="text" id="job_title" placeholder="Select a job">
-        <h3>Type job</h3>
-        <label for="cdd">CDD</label>
-        <input type="radio" name="type_job" id="cdd">
-        <label for="cdi">CDI</label>
-        <input type="radio" name="type_job" id="cdi">
-        <label for="stage">Stage</label>
-        <input type="radio" name="type_job" id="stage">
+        <div class="type-filtr">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Select a location" />
+        </div>
+        <div class="type-filtr">
+          <label for="domaine">Domaine</label>
+          <input
+            type="text"
+            id="domaine"
+            placeholder="Informatoque,Designe..."
+          />
+        </div>
+        <div class="type-filtr">
+          <label for="job_title">Job Title</label>
+          <input type="text" id="job_title" placeholder="Select a job" />
+        </div>
 
+        <h3>Type job</h3>
+        <div class="job_type">
+          <input type="radio" name="type_job" id="cdd" />
+          <label for="cdd">CDD</label>
+
+          <input type="radio" name="type_job" id="cdi" />
+          <label for="cdi">CDI</label>
+
+          <input type="radio" name="type_job" id="stage" />
+          <label for="stage">Stage</label>
+        </div>
+        
       </form>
     </aside>
   </body>
