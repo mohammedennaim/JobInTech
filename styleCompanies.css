@@ -45,4 +45,36 @@ nav ul li:hover {
   border-bottom: 2px solid white;
 }
 /* end nav */
+/*debut de style de aside titr_end_bar_recherche*/
+.titre_companies {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.bar_de_recherche {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 9px;
+  height: 10vh;
+  align-items: center;
+}
+.bar_de_recherche label {
+  font-weight: bold;
+}
+.bar_de_recherche input {
+  width: 28%;
+  height: 69%;
+  border-radius: 32px;
+}
 
+.bar_de_recherche button {
+  width: 8%;
+  height: 69%;
+  border-radius: 32px;
+  background: #70ff4d;
+  border: none;
+}
+/*fin de style de aside titr_end_bar_recherche*/
