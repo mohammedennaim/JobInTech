@@ -5,6 +5,10 @@
   margin: 0;
   font-family: Inter;
 }
+body{
+  background-color: #F6F6F6;
+  ;
+}
 /* star nav */
 nav {
   display: grid;
@@ -45,6 +49,11 @@ nav ul li:hover {
   border-bottom: 2px solid white;
 }
 /* end nav */
+main{ 
+  display: flex;
+  width: 100%;
+  gap: 1%;
+}
 /*debut de style de aside titr_end_bar_recherche*/
 .titre_companies {
   display: flex;
@@ -166,3 +175,38 @@ nav ul li:hover {
 
 
 /*fin de style de aside formulaire_de_filtrage*/
+/*debut  de style de main*/
+.companies{
+  width: 80%;
+}
+.des-companies{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
+  display: flex;
+  border-radius: 15px;
+  
+}
+.container{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+}
+.contenu{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.items{
+  display: inline;
+  padding-top: 1%;
+}
+.items h4{
+  text-align: center;
+}
+.star{
+  color: #70FF4D;
+}
+.description{
+  margin-left: 4%;
+}

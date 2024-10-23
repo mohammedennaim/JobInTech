@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copanies</title>
     <link rel="stylesheet" href="styleCompanies.css" />
+    <script src="https://kit.fontawesome.com/61ad6fdbee.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--------------------- Debut de code html --------------------->
@@ -32,55 +33,97 @@
 
     <!--------------------- fin de header --------------------->
 
-    <!--------------------- deut de titre et bar de recherche --------------------->
-    <aside class="titr_end_bar_recherche">
-      <div class="titre_companies">
-        <h1>Explore companies</h1>
-      </div>
-      <div class="bar_de_recherche">
-        <label for="recherche">Have an employer in mind?</label>
-        <input type="text" id="recherche" placeholder="Search for company" />
-        <button>Search</button>
-      </div>
-    </aside>
-    <!--------------------- fin de titre et bar de recherche --------------------->
+    
+      <!--------------------- deut de titre et bar de recherche --------------------->
+      <aside class="titr_end_bar_recherche">
+        <div class="titre_companies">
+          <h1>Explore companies</h1>
+        </div>
+        <div class="bar_de_recherche">
+          <label for="recherche">Have an employer in mind?</label>
+          <input type="text" id="recherche" placeholder="Search for company" />
+          <button>Search</button>
+        </div>
+      </aside>
+      <!--------------------- fin de titre et bar de recherche --------------------->
 
-    <!--------------------- deut de formulaire de filtre --------------------->
-    <aside class="filtre">
-      <form class="formulaire_de_filtrage">
-        <h2>Filter Companies</h2>
-        <div class="type-filtr">
-          <label for="location">Location</label>
-          <input type="text" id="location" placeholder="Select a location" />
-        </div>
-        <div class="type-filtr">
-          <label for="domaine">Domaine</label>
-          <input
-            type="text"
-            id="domaine"
-            placeholder="Informatoque,Designe..."
-          />
-        </div>
-        <div class="type-filtr">
-          <label for="job_title">Job Title</label>
-          <input type="text" id="job_title" placeholder="Select a job" />
-        </div>
+      <!--------------------- deut de formulaire de filtre --------------------->
+      <main>
+      <aside class="filtre">
+        <form class="formulaire_de_filtrage">
+          <h2>Filter Companies</h2>
+          <div class="type-filtr">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Select a location" />
+          </div>
+          <div class="type-filtr">
+            <label for="domaine">Domaine</label>
+            <input
+              type="text"
+              id="domaine"
+              placeholder="Informatoque,Designe..."
+            />
+          </div>
+          <div class="type-filtr">
+            <label for="job_title">Job Title</label>
+            <input type="text" id="job_title" placeholder="Select a job" />
+          </div>
 
-        <h3>Type job</h3>
-        <div class="job_type">
-          <input type="radio" name="type_job" id="cdd" />
-          <label for="cdd">CDD</label>
+          <h3>Type job</h3>
+          <div class="job_type">
+            <input type="radio" name="type_job" id="cdd" />
+            <label for="cdd">CDD</label>
 
-          <input type="radio" name="type_job" id="cdi" />
-          <label for="cdi">CDI</label>
+            <input type="radio" name="type_job" id="cdi" />
+            <label for="cdi">CDI</label>
 
-          <input type="radio" name="type_job" id="stage" />
-          <label for="stage">Stage</label>
+            <input type="radio" name="type_job" id="stage" />
+            <label for="stage">Stage</label>
+          </div>
+          <div class="button_filtre">
+            <button>Filter</button>
+          </div>
+        </form>
+      </aside>
+      <!--------------------- fin de formulaire de filtre --------------------->
+
+      <!--------------------- deut de sectoin companies --------------------->
+      <section class="companies">
+        <div class="des-companies">
+          <div class="img">
+            <img src="./imageBompanies/google-removebg-preview (1).png" alt="">
+          </div>
+          <div class="container">
+            <div class="contenu">
+              <div class="items">
+                <h4>Google </h4>
+                <p class="star">4,9<i class="fa-solid fa-star"></i></p>
+  
+              </div>
+              <div class="items">
+                <h4>Domaine</h4>
+                <p>Internet & 
+                  Web Services</p>
+              </div>
+              <div class="items">
+                <h4>Location</h4>
+                <p>65 office locations</p>
+              </div>
+              <div class="items">
+                <h4>Reviews</h4>
+                <p>119,9K</p>
+              </div>
+            </div>
+            <div class="description">
+              <h4>Description</h4>
+              <p>Since our founding in 1998, Google has grown by leaps and bounds. Starting from two computer science students in a university dorm room,
+                 we now have over a hundred thousand employees and over one hundr</p>
+            </div>
+          </div>
+          
         </div>
-        <div class="button_filtre">
-          <button>Filter</button>
-        </div>
-      </form>
-    </aside>
+        
+      </section>
+    </main>
   </body>
 </html>
