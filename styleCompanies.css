@@ -177,17 +177,25 @@ main{
 /*fin de style de aside formulaire_de_filtrage*/
 /*debut  de style de main*/
 .companies{
-  width: 80%;
+  width: 75%;
+}
+.contenu-companies{
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  overflow: auto;
+    height: 60%;
 }
 .des-companies{
   background-color: rgb(255, 255, 255);
   border: 1px solid;
   display: flex;
   border-radius: 15px;
+  width: 93%;
   
 }
 .container{
-  width: 50vw;
+  width: 55vw;
   display: flex;
   flex-direction: column;
   gap: 7%;
