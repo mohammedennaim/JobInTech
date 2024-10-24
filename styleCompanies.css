@@ -67,7 +67,7 @@ main{
   width: 100%;
   justify-content: center;
   gap: 9px;
-  height: 10vh;
+  height: 17vh;
   align-items: center;
 }
 .bar_de_recherche label {
@@ -75,7 +75,7 @@ main{
 }
 .bar_de_recherche input {
   width: 28%;
-  height: 69%;
+  height: 53%;
   border-radius: 32px;
 }
 .bar_de_recherche  input[placeholder]{
@@ -84,7 +84,7 @@ main{
 
 .bar_de_recherche button {
   width: 8%;
-  height: 69%;
+  height: 53%;
   border-radius: 32px;
   background: #70ff4d;
   border: none;
@@ -175,7 +175,7 @@ main{
 
 
 /*fin de style de aside formulaire_de_filtrage*/
-/*debut  de style de main*/
+/*debut  de style de sectoin companies*/
 .companies{
   width: 65VW;
   height: 90vh;
@@ -221,3 +221,23 @@ main{
 .description{
   margin-left: 4%;
 }
+/*fin  de style de sectoin companies*/
+.top-companies{
+  background-color: #E7E6E6;
+  width: 70vw;
+  height: 309px;
+  position: relative;
+  left: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
