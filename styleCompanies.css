@@ -51,13 +51,13 @@ nav ul li:hover {
 /* end nav */
 main{ 
   display: flex;
-  width: 100%;
+  width: 95vw;
   gap: 1%;
 }
 /*debut de style de aside titr_end_bar_recherche*/
 .titre_companies {
   display: flex;
-  width: 100vw;
+  width: 95vw;
   height: 10vh;
   justify-content: center;
   align-items: center;
@@ -177,21 +177,24 @@ main{
 /*fin de style de aside formulaire_de_filtrage*/
 /*debut  de style de main*/
 .companies{
-  width: 75%;
+  width: 65VW;
+  height: 90vh;
 }
 .contenu-companies{
   display: flex;
   flex-direction: column;
-  gap: 3%;
+  row-gap: 3%;
   overflow: auto;
-    height: 60%;
+    height: 98%;
+    width: 100%;
 }
 .des-companies{
   background-color: rgb(255, 255, 255);
   border: 1px solid;
   display: flex;
   border-radius: 15px;
-  width: 93%;
+  width: 97%;
+
   
 }
 .container{
