@@ -241,9 +241,28 @@ main{
     padding: 3%;
 }
 .top-companies{
-  background-color: white;
+    width: 65%;
+    height: 91%;
+    position: absolute;
+    left: 34%;
+    bottom: 5%;
+    display: flex;
 }
-
+.best-companies{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    
+}
+.companies_top{
+  background-color: white;
+  width: 92%;
+  height: 23%;
+  border: 0.4px solid #00000084;
+  border-radius: 5px;
+}
 
 
 
