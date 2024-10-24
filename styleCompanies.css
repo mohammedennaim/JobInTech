@@ -73,21 +73,30 @@ main {
   font-weight: bold;
 }
 .bar_de_recherche input {
-  width: 28%;
-  height: 53%;
+  width: 82%;
+    height: 42%;
   border-radius: 32px;
+  margin-right: 2%;
 }
-.bar_de_recherche input[placeholder] {
+.bar_de_recherche .recherche-mobil input[placeholder] {
   text-align: center;
 }
 
-.bar_de_recherche button {
-  width: 8%;
-  height: 53%;
+.bar_de_recherche .recherche-mobil button {
+  width: 19%;
+  height: 40%;
   border-radius: 32px;
   background: #70ff4d;
   border: none;
 }
+ .recherche-mobil{
+  display: flex;
+    width: 34vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
 /*fin de style de aside titr_end_bar_recherche*/
 /*debut de style de aside formulaire_de_filtrage*/
 .filtre {
@@ -154,9 +163,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28vw;
+  
   height: 14vh;
 }
+
 .formulaire_de_filtrage button {
   background-color: #70ff4d;
   width: 85%;
@@ -355,3 +365,19 @@ footer .stars-footer {
 footer .stars-footer img {
   height: 80%;
 }
+/* --------------------------------------parti mobil -----------------------------------*/
+@media (max-width:550px) {
+   nav{
+    display: none;
+   }
+   .bar_de_recherche{
+    flex-direction: column;
+   }
+   .recherche-mobil{
+    width: 100%;
+  }
+   .bar_de_recherche input {
+    width: 75%;
+  }
+ 
+  }
