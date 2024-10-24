@@ -57,7 +57,7 @@ nav ul li:hover{
     color: black;
 }
 .branding button{
-    background-color: rgb(111, 179, 111);
+    background-color: rgb(72, 243, 72);
     cursor: pointer;
     border-radius:  5px;
 }
@@ -65,9 +65,14 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
 }
-.question p{
+.p-ques{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 18px;
+}
+.p{
+    text-align: center;
+    font-size: 15px;
 }
 .avantages img{
     width: 50px;
@@ -102,7 +107,7 @@ nav ul li:hover{
     width: 165px;
 }
 .answers-button button{
-    background-color: rgb(111, 179, 111);
+    background-color: rgb(72, 243, 72);
     margin-left: 132px;
     border-radius: 5px;
     cursor: pointer;
@@ -127,12 +132,40 @@ nav ul li:hover{
     font-size: 13px;
 }
 .info-image button{
-    background-color: rgb(111, 179, 111);
+    background-color: rgb(72, 243, 72);
     margin-left: 40px;
     border-radius: 5px;
+    cursor: pointer;
 }
-
-
+.reviews img{
+    width: 170px;
+    height: 145px;
+    padding-right: 5px;
+    object-fit: cover;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    
+}
+.p7{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+.p8{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    gap: 10px;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.boton button{
+    background-color: rgb(72, 243, 72);
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
