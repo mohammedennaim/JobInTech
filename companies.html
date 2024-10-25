@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copanies</title>
     <link rel="stylesheet" href="styleCompanies.css" />
+    <link rel="stylesheet" href="mobile.css">
     <script src="https://kit.fontawesome.com/61ad6fdbee.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--------------------- Debut de code html --------------------->
 
     <!--------------------- Debut de header --------------------->
-    <header>
-      <nav>
-        <img src="images&videos Community/logo.png" alt="logo" />
-        <ul>
-          <li>FindJob</li>
-          <li>Community</li>
-          <li>Companies</li>
-          <li>Employers</li>
-        </ul>
-        <div>
-          <div class="location">
-            <img src="images&videos Community/location.png" alt="" />
-            <p>Youssoufia,MR</p>
+    <nav>
+      <img src="images&videos Community/logo.png" alt="Logo" id="logo">
+      <ul id="list">
+          <li><a href="findjob.html">FindJob</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="employees.html">Employers</a></li>
+      </ul>
+      <div>
+          <div class="location" id="local">
+              <img src="images&videos Community/location.png" alt="Location">
+              <p>Youssoufia,MR</p>
           </div>
-          <img src="images&videos Community/notification.png" alt="" />
-          <img src="images&videos Community/user.png" alt="" />
-        </div>
-      </nav>
-    </header>
+          <img src="images&videos Community/notification.png" alt="Notification" id="notification">
+          <div class="profil-menu">
+              <img src="images&videos Community/photo-user.png" alt="Photo User" id="user">
+              <div class="profil" id="profil">
+                  <div class="profil-container">
+                      <div class="profil-content">
+                          <div class="user">
+                              <img src="images&videos Community/user.png" alt="">
+                              <p>Chef Moha</p>
+                          </div>
+                          <div class="local">
+                              <img src="images&videos Community/location-profil.png" alt="">
+                              <p>Youssoufia,MR</p>
+                          </div>
+                      </div>
+                      <img src="images&videos Community/notification-profil.png" alt="">
+                  </div>
+                  <button class="Log-out">Log Out</button>
+              </div>
+          </div>
+      </div>
+  </nav>
 
     <!--------------------- fin de header --------------------->
 
@@ -372,33 +389,34 @@
     <!--------------------- deut de footer --------------------->
     <footer>
       <div class="logo-footer">
-          <img src="images&videos Community/logo2.png" alt="Horison" loading="lazy" >
+          <img src="images&videos Community/logo2.png" alt="" >
+          <img src="images&videos Community/logo-footer.png" alt="logo-footer-mobile">
       </div>
       <div class="down">
           <div class="store">
               <h3>Download the App</h3>
-              <img src="images&videos Community/Google Play.png" alt="Google Play" loading="lazy">
-              <img src="images&videos Community/App Store.png" alt="App Store" loading="lazy">
+              <img src="images&videos Community/Google Play.png" alt="">
+              <img src="images&videos Community/App Store.png" alt="">
           </div>
           <div class="social">
               <div class="facebook">
-                  <img src="images&videos Community/Facebook.png" alt="facebook" loading="lazy">
+                  <img src="images&videos Community/Facebook.png" alt="">
                   <p># Horison</p>
               </div>
               <div class="instagram">
-                  <img src="images&videos Community/Instagram.png" alt="Instagram" loading="lazy">
+                  <img src="images&videos Community/Instagram.png" alt="">
                   <p>@ Horison</p>
               </div>
               <div class="twitter">
-                  <img src="images&videos Community/TwitterX.png" alt="TwitterX" loading="lazy">
+                  <img src="images&videos Community/TwitterX.png" alt="">
                   <p># Horison</p>
               </div>
               <div class="whatsapp">
-                  <img src="images&videos Community/WhatsApp.png" alt="whatsapp" loading="lazy">
+                  <img src="images&videos Community/WhatsApp.png" alt="">
                   <p>+212 71 23 65 30</p>
               </div>
           </div>
-          
+
       </div>
       <div class="pages-parent">
           <h3>Pages</h3>
@@ -410,9 +428,9 @@
           </div>
       </div>
       <div class="stars-footer">
-          <img src="images&videos Community/stars-footer.png" alt="" loading="lazy">
+          <img src="images&videos Community/stars-footer.png" alt="">
       </div>
   </footer>
-    
+  <script src="script.js"></script>
   </body>
 </html>

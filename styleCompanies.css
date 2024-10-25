@@ -6,47 +6,108 @@
   font-family: Inter;
 }
 body {
-  background-color: #f6f6f6;
+  background-color: white;
+  overflow-x: hidden;
 }
 /* star nav */
-nav {
+nav{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr 200px;
   background-color: black;
   padding: 0 5% 0 2%;
   align-items: center;
   height: 50px;
+  font-size: 14px;
 }
-nav ul {
+#logo{
+  position: relative;
+}
+nav ul{
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
   padding: 0 20%;
+  position: relative;
 }
-nav ul li {
+nav ul li{
   list-style: none;
   color: white;
   height: 100%;
   width: 70px;
   cursor: pointer;
 }
-nav div:nth-of-type(1) {
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+nav div:nth-of-type(1){
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 10px;
 }
-nav div p {
+nav div p{
   color: white;
 }
-.location {
+.location{
   display: grid;
   gap: 10px;
 }
-nav ul li:hover {
+nav ul li:hover{
   line-height: 10px;
   border-bottom: 2px solid white;
 }
+#user{
+  z-index: 100;
+  position: relative;
+}
+#profil{
+  position: relative;
+  top: -15px;
+  left: -200px;
+  height: 130px;
+  width: 255px;
+  background-color: rgba(255, 255, 255, 0.8);
+  flex-direction: column;
+  padding: 30px 10px 10px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+}
+
+#profil .profil-container .profil-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#profil .profil-container .profil-content p{
+  color: black;
+}
+#profil .profil-container .profil-content .user,#profil .profil-container .profil-content .local{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100%;
+}
+
+#profil .profil-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#profil .profil-container img:last-child{
+  width: 30px;
+  position: relative;
+  left: -14px;
+}
+.Log-out{
+  background-color: #70FF4D;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 90px;
+}
+
 /* end nav */
 main {
   display: flex;
@@ -294,20 +355,29 @@ main {
 
 /*debut  de style de footer*/
 
-footer {
+
+footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  height: 23vh;
+  height: 20vh;
+  background-color: white;
+  border-top: 1px solid rgba(161, 158, 158, 0.8);
+  
+  font-size: 14px;
 }
-footer .logo-footer {
+footer .logo-footer{
   padding-right: 20%;
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
-footer .logo-footer img {
+footer .logo-footer img{
   height: 70%;
+}
+footer .down{
+  background-color: white;
 }
 
 footer .down .store {
@@ -315,11 +385,11 @@ footer .down .store {
   grid-template-columns: auto auto auto;
   padding: 7% 10%;
 }
-footer .down .store img {
+footer .down .store img{
   width: 50%;
 }
 
-footer .down .social {
+footer .down .social{
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
@@ -327,44 +397,49 @@ footer .down .social {
   position: relative;
   top: -15px;
 }
-footer .down .social div {
+footer .down .social div{
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: 10px;
+  
 }
 footer .down .social div img {
   width: 25px;
 }
-footer .down .social div:nth-of-type(3),
-footer .down .social div:nth-of-type(4) {
+footer .logo-footer img:nth-of-type(2){
+  display: none;
+}
+footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
   margin-top: 10px;
 }
-footer .pages-parent h3 {
+footer .pages-parent{
+  background-color: white;
+}
+footer .pages-parent h3{
   display: grid;
   padding: 7% 10%;
 }
-footer .pages-parent .pages-child {
+footer .pages-parent .pages-child{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-left: 10%;
 }
-footer .pages-parent .pages-child p:nth-of-type(3),
-footer .pages-parent .pages-child p:nth-of-type(4) {
+footer .pages-parent .pages-child p:nth-of-type(3),footer .pages-parent .pages-child p:nth-of-type(4){
   margin-top: 5%;
 }
-footer .stars-footer {
+footer .stars-footer{
   padding-right: 10%;
   display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -4%;
+  background-color: white;
 }
-footer .stars-footer img {
+footer .stars-footer img{
   height: 80%;
 }
+
 /* --------------------------------------parti mobil -----------------------------------*/
 @media (max-width:550px) {
    nav{
@@ -470,7 +545,5 @@ footer .stars-footer img {
     }
 
 
-footer{
-    display: none;
-   }
+   
   }
