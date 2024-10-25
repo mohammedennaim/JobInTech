@@ -382,9 +382,6 @@ footer .stars-footer img {
   main{
     flex-direction: column;
   }
-  .filtre{
-    
-  }
   .button_filtre{
     display: flex;
     justify-content: center;
@@ -439,6 +436,7 @@ footer .stars-footer img {
    .top-companies-to-work {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #e7e6e6;
     width: 99vw;
     height: 77vw;
@@ -448,15 +446,24 @@ footer .stars-footer img {
       .heding-top-companies {
         background-color: white;
         text-align: center;
-        /* width: 50%; */
-        /* height: 47%; */
-        /* position: absolute; */
-        top: 27%;
-        left: -19%;
+        width: 86%;
+        height: 35%;
+        position: static;
+        top: 0;
+        left: 0;
         padding: 3%;
     }
-
-
+    .top-companies {
+      position: static;
+    }
+    .best-companies {
+      margin-left: 4%;
+    }
+    .companies_top {
+      gap: 0%;
+        width: 99%;
+        height: 24%;
+    }
 
 
 
