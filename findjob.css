@@ -410,15 +410,6 @@ body{
     line-height: 15px;
     position: relative;
 }
-/* .icones {
-    background-color: brown;
-    display:flex;
-    flex-direction: column;
-    display: inline-block;
-    width: 5%;
-    position:relative;
-    left: 95%;
-} */
 .icones {
   position: absolute;
   width: 5%;
