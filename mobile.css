@@ -1,0 +1,77 @@
+@media (max-width : 600px ) {
+    nav ul,#local,#notification{
+        display: none;
+    }
+    nav{
+        grid-template-columns: 1fr auto;
+        padding-left: 3%;
+    }
+    #user{
+        position: relative;
+        left: 130px;
+
+    }
+    body{
+        overflow: scroll;
+    }
+    section{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    section aside,section article{
+        display: none;
+    }
+    section main{
+        padding-left: 5%;
+    }
+    input#search{
+        padding-left: 30px;
+    }
+    .search div{
+        position: relative;
+        top: -25px;
+        display: grid;
+        align-items: center;
+    }
+    .line{
+        /* border: 1px solid grey; */
+        height: 20px;
+        position: absolute;
+        top: 55px;
+    }
+    .search button{
+        background-color: #70FF4D;
+        border: none;
+        border-radius: 50px;
+    }
+
+    footer{
+        display: grid;
+        width: 100%;
+        height: 90vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 5%;
+    }
+    
+    footer .logo-footer img:nth-of-type(1){
+        display: none;
+    }
+    footer .logo-footer img:nth-of-type(2){
+        width: 100%;
+        height: 20%;
+        display: grid;
+    }
+    .down{
+        display: none;
+    }
+    .stars-footer{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .stars-footer img{
+        position: relative;
+        top: 50px;
+    }
+}
