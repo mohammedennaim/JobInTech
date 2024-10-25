@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+/* star nav */
+nav{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr 200px;
+  background-color: black;
+  padding: 0 5% 0 2%;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+}
+#logo{
+  position: relative;
+}
+nav ul{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  padding: 0 20%;
+  position: relative;
+}
+nav ul li{
+  list-style: none;
+  color: white;
+  height: 100%;
+  width: 70px;
+  cursor: pointer;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+nav div:nth-of-type(1){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+nav div p{
+  color: white;
+}
+.location{
+  display: grid;
+  gap: 10px;
+}
+nav ul li:hover{
+  line-height: 10px;
+  border-bottom: 2px solid white;
+}
+#user{
+  z-index: 100;
+  position: relative;
+}
+#profil{
+  position: relative;
+  top: -15px;
+  left: -200px;
+  height: 130px;
+  width: 255px;
+  background-color: rgba(255, 255, 255, 0.8);
+  flex-direction: column;
+  padding: 30px 10px 10px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+}
+
+#profil .profil-container .profil-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#profil .profil-container .profil-content p{
+  color: black;
+}
+#profil .profil-container .profil-content .user,#profil .profil-container .profil-content .local{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100%;
+}
+
+#profil .profil-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#profil .profil-container img:last-child{
+  width: 30px;
+  position: relative;
+  left: -14px;
+}
+.Log-out{
+  background-color: #70FF4D;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 90px;
+}
+
+/* end nav */
+main {
+  display: flex;
+  width: 95vw;
+  gap: 1%;
+}
+/*debut de style de aside titr_end_bar_recherche*/
+.titre_companies {
+  display: flex;
+  width: 95vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.bar_de_recherche {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 9px;
+  height: 17vh;
+  align-items: center;
+}
+.bar_de_recherche label {
+  font-weight: bold;
+}
+.bar_de_recherche input {
+  width: 82%;
+    height: 42%;
+  border-radius: 32px;
+  margin-right: 2%;
+}
+.bar_de_recherche .recherche-mobil input[placeholder] {
+  text-align: center;
+}
+
+.bar_de_recherche .recherche-mobil button {
+  width: 19%;
+  height: 40%;
+  border-radius: 32px;
+  background: #70ff4d;
+  border: none;
+}
+ .recherche-mobil{
+  display: flex;
+    width: 34vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fin de style de aside titr_end_bar_recherche*/
+/*debut de style de aside formulaire_de_filtrage*/
+.filtre {
+  width: 30vw;
+  height: 90vh;
+  border: 1px solid;
+  border-radius: 5%;
+  padding: 5px;
+  margin-left: 1%;
+  padding-left: 1%;
+}
+.formulaire_de_filtrage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 6%;
+}
+.formulaire_de_filtrage h2 {
+  text-align: center;
+}
+.formulaire_de_filtrage .type-filtr input {
+  width: 89%;
+  height: 90%;
+  border-radius: 20px;
+}
+.formulaire_de_filtrage .type-filtr input[placeholder] {
+  text-align: center;
+}
+.formulaire_de_filtrage .job_type input[type="radio"] {
+  display: none;
+}
+
+/* Mise en page des types de job */
+.formulaire_de_filtrage .job_type {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style de chaque type de job (CDD, CDI, Stage) */
+.formulaire_de_filtrage .job_type .type {
+  width: 22%;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+/* Style des labels */
+.formulaire_de_filtrage .job_type label {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 32px;
+  border: 1px solid #ccc;
+}
+
+/* Style du bouton radio sélectionné */
+.formulaire_de_filtrage .job_type input[type="radio"]:checked + label {
+  background-color: #70ff4d;
+  border-radius: 32px;
+}
+.formulaire_de_filtrage .button_filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 14vh;
+}
+
+.formulaire_de_filtrage button {
+  background-color: #70ff4d;
+  width: 85%;
+  height: 80%;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/*fin de style de aside formulaire_de_filtrage*/
+/*debut  de style de sectoin companies*/
+.companies {
+  width: 65vw;
+  height: 90vh;
+}
+.contenu-companies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3%;
+  overflow: auto;
+  height: 98%;
+  width: 100%;
+}
+.des-companies {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
+  display: flex;
+  border-radius: 15px;
+  width: 97%;
+}
+.container {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+}
+.contenu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.items {
+  display: inline;
+  padding-top: 1%;
+}
+.items h4 {
+  text-align: center;
+}
+.star {
+  color: #70ff4d;
+}
+.description {
+  margin-left: 4%;
+}
+/*fin  de style de sectoin companies*/
+/*debut  de style d'saide top companies*/
+.top-companies-to-work {
+  background-color: #e7e6e6;
+  width: 75vw;
+  height: 25vw;
+  position: relative;
+  left: 18%;
+  margin: 3% 0;
+}
+.heding-top-companies {
+  background-color: white;
+  text-align: center;
+  width: 50%;
+  height: 47%;
+  position: absolute;
+  top: 27%;
+  left: -19%;
+  padding: 3%;
+}
+.top-companies {
+  width: 65%;
+  height: 91%;
+  position: absolute;
+  left: 34%;
+  bottom: 5%;
+  display: flex;
+}
+.best-companies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.companies_top {
+  background-color: white;
+  width: 92%;
+  height: 23%;
+  border: 0.4px solid #00000084;
+  border-radius: 5px;
+  display: flex;
+  gap: 4%;
+}
+.top-companies img {
+  height: 96%;
+  border-radius: 5px;
+}
+#showmore {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.top-companies button {
+  width: 35%;
+  height: 50%;
+  background-color: #70ff4d;
+  border: none;
+  border-radius: 3px;
+}
+.top-companies a {
+  text-decoration: none;
+  color: black;
+}
+.top-companies .nom {
+  padding-top: 1%;
+}
+/*fin  de style d'saide top companies*/
+
+/*debut  de style de footer*/
+
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  height: 20vh;
+  background-color: white;
+  border-top: 1px solid rgba(161, 158, 158, 0.8);
+  
+  font-size: 14px;
+}
+footer .logo-footer{
+  padding-right: 20%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+footer .logo-footer img{
+  height: 70%;
+}
+footer .down{
+  background-color: white;
+}
+
+footer .down .store {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 7% 10%;
+}
+footer .down .store img{
+  width: 50%;
+}
+
+footer .down .social{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 9%;
+  position: relative;
+  top: -15px;
+}
+footer .down .social div{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
+  
+}
+footer .down .social div img {
+  width: 25px;
+}
+footer .logo-footer img:nth-of-type(2){
+  display: none;
+}
+footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
+  margin-top: 10px;
+}
+footer .pages-parent{
+  background-color: white;
+}
+footer .pages-parent h3{
+  display: grid;
+  padding: 7% 10%;
+}
+footer .pages-parent .pages-child{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 10%;
+}
+footer .pages-parent .pages-child p:nth-of-type(3),footer .pages-parent .pages-child p:nth-of-type(4){
+  margin-top: 5%;
+}
+footer .stars-footer{
+  padding-right: 10%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+footer .stars-footer img{
+  height: 80%;
+}
+
+/* --------------------------------------parti mobil -----------------------------------*/
+@media (max-width:550px) {
+   nav{
+    display: none;
+   }
+   .bar_de_recherche{
+    flex-direction: column;
+   }
+   .recherche-mobil{
+    width: 100%;
+  }
+   .bar_de_recherche input {
+    width: 75%;
+  }
+  main{
+    flex-direction: column;
+  }
+  .button_filtre{
+    display: flex;
+    justify-content: center;
+  }
+  .filtre{
+    height: 79vh;
+    border: none;
+    display: flex;
+     width: 100%; 
+    justify-content:center;
+    padding: 0;
+    
+    padding-left: 1%;
+  }
+  .formulaire_de_filtrage {
+    height: 62%;
+    gap: 9%;
+  }
+  .formulaire_de_filtrage button{
+    height: 131%;
+  }
+  .companies {
+    width: 100vw;
+    height: 44vh;
+  }
+  .img{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .img img {
+    width: 100%;
+  }
+  .location{
+    display: none;
+  }
+  .description{
+    display: none;
+  }
+  .container {
+    width: 69vw;
+  }
+  .items {
+    text-align: center;
+  }
+   .contenu{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   }
+   .top-companies-to-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e6e6;
+    width: 99vw;
+    height: 77vw;
+    position: relative;
+    left: 0;
+  }
+      .heding-top-companies {
+        background-color: white;
+        text-align: center;
+        width: 86%;
+        height: 35%;
+        position: static;
+        top: 0;
+        left: 0;
+        padding: 3%;
+    }
+    .top-companies {
+      position: static;
+    }
+    .best-companies {
+      margin-left: 4%;
+    }
+    .companies_top {
+      gap: 0%;
+        width: 99%;
+        height: 24%;
+    }
+    .top-companies button {
+      width: 62%;
+      height: 56%
+    }
+
+
+   
+  }

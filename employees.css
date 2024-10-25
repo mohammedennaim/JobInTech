@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: inter;
+}
 body{
     background-color: white;
 }
 nav{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 4fr 200px;
     background-color: black;
@@ -9,11 +16,15 @@ nav{
     align-items: center;
     height: 50px;
 }
+#logo{
+    position: relative;
+}
 nav ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
     padding: 0 20%;
+    position: relative;
 }
 nav ul li{
     list-style: none;
@@ -21,6 +32,10 @@ nav ul li{
     height: 100%;
     width: 70px;
     cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 nav div:nth-of-type(1){
     display: grid;
@@ -39,6 +54,57 @@ nav ul li:hover{
     line-height: 10px;
     border-bottom: 2px solid white;
 }
+#user{
+    z-index: 100;
+    position: relative;
+}
+#profil{
+    position: relative;
+    top: -15px;
+    left: -200px;
+    height: 130px;
+    width: 255px;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    padding: 30px 10px 10px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#profil .profil-container .profil-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#profil .profil-container .profil-content p{
+    color: black;
+}
+#profil .profil-container .profil-content .user,#profil .profil-container .profil-content .local{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+}
+
+#profil .profil-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#profil .profil-container img:last-child{
+    width: 30px;
+    position: relative;
+    left: -14px;
+}
+.Log-out{
+    background-color: #70FF4D;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 90px;
+}
+
+
 .branding{
     display: flex;
 }
@@ -60,6 +126,11 @@ nav ul li:hover{
     background-color: rgb(72, 243, 72);
     cursor: pointer;
     border-radius:  5px;
+}
+.branding button:hover{
+    transition: 1s;
+    background-color: whitesmoke;
+    color: rgb(72, 243, 72);
 }
 .question{
     display: flex;
@@ -106,12 +177,20 @@ nav ul li:hover{
     text-align: center;
     width: 165px;
 }
+.start-button{
+    display: flex;
+    justify-content: center;
+}
 .answers-button button{
     background-color: rgb(72, 243, 72);
-    margin-left: 132px;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 5px;
+}
+.answers-button button:hover{
+    transition: 1s;
+    background-color: whitesmoke;
+    color: rgb(72, 243, 72);
 }
 .rating h2{
     display: flex;
@@ -137,6 +216,11 @@ nav ul li:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+.info-image button:hover{
+    transition: 1s;
+    background-color: whitesmoke;
+    color: rgb(72, 243, 72);
+}
 .reviews img{
     width: 170px;
     height: 145px;
@@ -153,7 +237,6 @@ nav ul li:hover{
     font-size: 15px;
 }
 .p8{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     gap: 10px;
 }
@@ -166,7 +249,342 @@ nav ul li:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+.boton button:hover{
+    transition: 1s;
+    background-color: whitesmoke;
+    color: rgb(72, 243, 72);
+}
 
 
-
+@media screen and (min-width : 700px){
+    body{
+        background-color: white;
+        overflow-x: hidden;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 4fr 200px;
+        background-color: black;
+        padding: 0 5% 0 2%;
+        align-items: center;
+        height: 50px;
+        font-size: 14px;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+        padding: 0 20%;
+    }
+    nav ul li{
+        list-style: none;
+        color: white;
+        height: 100%;
+        width: 70px;
+        cursor: pointer;
+    }
+    nav div:nth-of-type(1){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+    nav div p{
+        color: white;
+    }
+    .location{
+        display: grid;
+        gap: 10px;
+    }
+    nav ul li:hover{
+        line-height: 10px;
+        border-bottom: 2px solid white;
+    }
+    .branding{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    .branding img{
+        width: 500px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 10px 10px;
+        background-color: rgb(230, 237, 237);
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+    }
+    .text h1{
+        font-size: 60px;
+        margin: 5px 5px 5px 5px;
+    }
+    .branding p{
+        font-size: 40px;
+        color: black;
+    }
+    .branding button{
+        font-size: 25px;
+        background-color: rgb(72, 243, 72);
+        cursor: pointer;
+        border-radius:  5px;
+        border: none;
+        width: 600px;
+        margin-left: 70px;
+        height: 50px;
+        margin-top: 35px;
+    }
+    .branding button:hover{
+        transition: 1s;
+        background-color: whitesmoke;
+        color: rgb(72, 243, 72);
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+    }
+    .p-ques{
+        font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 55px;
+    }
+    .p{
+        text-align: center;
+        font-size: 50px;
+    }
+    .answers-button{
+        background-color: rgb(230, 237, 237);
+    }
+    .answers{
+        display: flex;
+        gap: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 5px;
+        padding-top: 5px;
+    }
+    .avantages{
+        border-radius: 15px;
+        background-color: rgb(230, 237, 237);
+    }
+    .answer1 img{
+        width: 150px;
+    }
+    .answer1{
+        width: 300px;
+        text-align: center;
+    }
+    .p1{
+        font-size: 25px;
+    }
+    .p2{
+        font-size: 20px;
+    }
+    .answer2 img{
+        width: 150px;
+    }
+    .answer2{
+        width: 300px;
+        text-align: center;
+    }
+    .p3{
+        font-size: 25px;
+    }
+    .p4{
+        font-size: 20px;
+    }
+    .answer3 img{
+        width: 150px;
+    }
+    .answer3{
+        width: 300px;
+        text-align: center;
+    }
+    .p5{
+        font-size: 25px;
+    }
+    .start-button{
+        display: flex;
+        justify-content: center;
+    }
+    .answers-button button{
+        background-color: rgb(72, 243, 72);
+        width: 250px;
+        height: 40px;
+        font-size: 25px;
+        border: none;
+    }
+    .answers-button button:hover{
+        transition: 1s;
+        background-color: whitesmoke;
+        color: rgb(72, 243, 72);
+    }
+    .rating h2{
+        font-size: 50px;
+        color: rgb(14, 154, 14);
+    }
+    .info-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .rating img{
+        width: 650px;
+        height: 550px;
+    }
+    .p5{
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .p6{
+        font-size: 38px;
+        margin-left: 50px;
+    }
+    .info-image button{
+        background-color: rgb(72, 243, 72);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 250px;
+        height: 50px;
+        font-size: 22px;
+        border: none;
+        margin-left: 280px;
+    }
+    .info-image button:hover{
+        transition: 1s;
+        background-color: whitesmoke;
+        color: rgb(72, 243, 72);
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .reviews img{
+        width: 650px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .p7{
+        font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    .p8{
+        font-size: 40px;
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+    }
+    .boton button{
+        background-color: rgb(72, 243, 72);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 350px;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+    }
+    .boton button:hover{
+        transition: 1s;
+        background-color: whitesmoke;
+        color: rgb(72, 243, 72);
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        height: 20vh;
+        background-color: white;
+        border-top: 1px solid rgba(161, 158, 158, 0.8);
+        padding-left: 3%;
+        
+        font-size: 14px;
+    }
+    footer .logo-footer{
+        padding-right: 20%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    footer .logo-footer img{
+        height: 70%;
+    }
+    footer .down{
+        background-color: white;
+    }
+    
+    footer .down .store {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 7% 10%;
+    }
+    footer .down .store img{
+        width: 50%;
+    }
+    
+    footer .down .social{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 9%;
+        position: relative;
+        top: -15px;
+    }
+    footer .down .social div{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 10px;
+        
+    }
+    footer .down .social div img {
+        width: 25px;
+    }
+    footer .logo-footer img:nth-of-type(2){
+        display: none;
+    }
+    footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
+        margin-top: 10px;
+    }
+    footer .pages-parent{
+        background-color: white;
+    }
+    footer .pages-parent h3{
+        display: grid;
+        padding: 7% 10%;
+    }
+    footer .pages-parent .pages-child{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 10%;
+    }
+    footer .pages-parent .pages-child p:nth-of-type(3),footer .pages-parent .pages-child p:nth-of-type(4){
+        margin-top: 5%;
+    }
+    footer .stars-footer{
+        /* padding-right: 10%; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        background-color: white;
+    }
+    footer .stars-footer img{
+        height: 80%;
+    }
+}
 
