@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: inter;
+}
 body{
     background-color: white;
 }
 nav{
-    display: none;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 4fr 200px;
     background-color: black;
@@ -10,11 +16,15 @@ nav{
     align-items: center;
     height: 50px;
 }
+#logo{
+    position: relative;
+}
 nav ul{
-    display: none;
+    display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
     padding: 0 20%;
+    position: relative;
 }
 nav ul li{
     list-style: none;
@@ -23,8 +33,11 @@ nav ul li{
     width: 70px;
     cursor: pointer;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
 nav div:nth-of-type(1){
-    display: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -34,17 +47,63 @@ nav div p{
     color: white;
 }
 .location{
-    display: none;
     display: grid;
     gap: 10px;
-}
-#lolo{
-    display: none;
 }
 nav ul li:hover{
     line-height: 10px;
     border-bottom: 2px solid white;
 }
+#user{
+    z-index: 100;
+    position: relative;
+}
+#profil{
+    position: relative;
+    top: -15px;
+    left: -200px;
+    height: 130px;
+    width: 255px;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    padding: 30px 10px 10px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#profil .profil-container .profil-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#profil .profil-container .profil-content p{
+    color: black;
+}
+#profil .profil-container .profil-content .user,#profil .profil-container .profil-content .local{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+}
+
+#profil .profil-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#profil .profil-container img:last-child{
+    width: 30px;
+    position: relative;
+    left: -14px;
+}
+.Log-out{
+    background-color: #70FF4D;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 90px;
+}
+
 
 .branding{
     display: flex;
@@ -195,81 +254,12 @@ nav ul li:hover{
     background-color: whitesmoke;
     color: rgb(72, 243, 72);
 }
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    height: 23vh;
-}
-footer .logo-footer{
-    padding-right: 20%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-footer .logo-footer img{
-    height: 70%;
-}
 
-footer .down .store {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 7% 10%;
-    display: none;
-}
-footer .down .store img{
-    width: 50%;
-}
-
-footer .down .social{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    padding-left: 9%;
-    position: relative;
-    top: -15px;
-}
-footer .down .social div{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    column-gap: 10px;
-    display: none;
-}
-footer .down .social div img {
-    width: 25px;
-}
-footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
-    margin-top: 10px;
-}
-footer .pages-parent h3{
-    display: grid;
-    padding: 7% 10%;
-}
-footer .pages-parent .pages-child{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-left: 10%;
-}
-footer .pages-parent .pages-child p:nth-of-type(3),footer .pages-parent .pages-child p:nth-of-type(4){
-    margin-top: 5%;
-}
-footer .stars-footer{
-    padding-right: 10%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -4%;
-    display: none;
-}
-footer .stars-footer img{
-    height: 80%;
-}
 
 @media screen and (min-width : 700px){
     body{
         background-color: white;
+        overflow-x: hidden;
     }
     nav{
         display: grid;
@@ -278,6 +268,7 @@ footer .stars-footer img{
         padding: 0 5% 0 2%;
         align-items: center;
         height: 50px;
+        font-size: 14px;
     }
     nav ul{
         display: grid;
@@ -513,16 +504,25 @@ footer .stars-footer img{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
-        height: 23vh;
+        height: 20vh;
+        background-color: white;
+        border-top: 1px solid rgba(161, 158, 158, 0.8);
+        padding-left: 3%;
+        
+        font-size: 14px;
     }
     footer .logo-footer{
         padding-right: 20%;
         display: grid;
         justify-content: center;
         align-items: center;
+        background-color: white;
     }
     footer .logo-footer img{
         height: 70%;
+    }
+    footer .down{
+        background-color: white;
     }
     
     footer .down .store {
@@ -547,12 +547,19 @@ footer .stars-footer img{
         grid-template-columns: auto 1fr;
         align-items: center;
         column-gap: 10px;
+        
     }
     footer .down .social div img {
         width: 25px;
     }
+    footer .logo-footer img:nth-of-type(2){
+        display: none;
+    }
     footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
         margin-top: 10px;
+    }
+    footer .pages-parent{
+        background-color: white;
     }
     footer .pages-parent h3{
         display: grid;
@@ -568,16 +575,16 @@ footer .stars-footer img{
         margin-top: 5%;
     }
     footer .stars-footer{
-        padding-right: 10%;
+        /* padding-right: 10%; */
         display: grid;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: -4%;
+        top: 0;
+        background-color: white;
     }
     footer .stars-footer img{
         height: 80%;
     }
-
 }
 
