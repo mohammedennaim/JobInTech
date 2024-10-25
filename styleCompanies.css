@@ -383,20 +383,91 @@ footer .stars-footer img {
     flex-direction: column;
   }
   .filtre{
-    width: 93vw;
+    
   }
   .button_filtre{
     display: flex;
     justify-content: center;
   }
   .filtre{
+    height: 79vh;
     border: none;
     display: flex;
      width: 100%; 
     justify-content:center;
+    padding: 0;
+    
+    padding-left: 1%;
+  }
+  .formulaire_de_filtrage {
+    height: 62%;
+    gap: 9%;
   }
   .formulaire_de_filtrage button{
-    height: 50%;
+    height: 131%;
   }
-  
+  .companies {
+    width: 100vw;
+    height: 44vh;
+  }
+  .img{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .img img {
+    width: 100%;
+  }
+  .location{
+    display: none;
+  }
+  .description{
+    display: none;
+  }
+  .container {
+    width: 69vw;
+  }
+  .items {
+    text-align: center;
+  }
+   .contenu{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   }
+   .top-companies-to-work {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e6e6;
+    width: 99vw;
+    height: 77vw;
+    position: relative;
+    left: 0;
+  }
+      .heding-top-companies {
+        background-color: white;
+        text-align: center;
+        /* width: 50%; */
+        /* height: 47%; */
+        /* position: absolute; */
+        top: 27%;
+        left: -19%;
+        padding: 3%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+   footer{
+    display: none;
+   }
   }
