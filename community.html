@@ -6,40 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community</title>
     <link rel="stylesheet" href="styleCommunity.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="https://kit.fontawesome.com/6d9e6483d0.js" crossorigin="anonymous" async defer></script>
 </head>
 
 <body>
     <nav>
-        <img src="images&videos Community/logo.png" alt="logo">
-        <ul>
-            <li>FindJob</li>
-            <li>Community</li>
-            <li>Companies</li>
-            <li>Employers</li>
+        <img src="images&videos Community/logo.png" alt="Logo" id="logo">
+        <ul id="list">
+            <li><a href="findjob.html">FindJob</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="employees.html">Employers</a></li>
         </ul>
         <div>
-            <div class="location">
-                <img src="images&videos Community/location.png" alt="">
+            <div class="location" id="local">
+                <img src="images&videos Community/location.png" alt="Location">
                 <p>Youssoufia,MR</p>
             </div>
-            <img src="images&videos Community/notification.png" alt="">
-            <img src="images&videos Community/user.png" alt="">
+            <img src="images&videos Community/notification.png" alt="Notification" id="notification">
+            <div class="profil-menu">
+                <img src="images&videos Community/photo-user.png" alt="Photo User" id="user">
+                <div class="profil" id="profil">
+                    <div class="profil-container">
+                        <div class="profil-content">
+                            <div class="user">
+                                <img src="images&videos Community/user.png" alt="">
+                                <p>Chef Moha</p>
+                            </div>
+                            <div class="local">
+                                <img src="images&videos Community/location-profil.png" alt="">
+                                <p>Youssoufia,MR</p>
+                            </div>
+                        </div>
+                        <img src="images&videos Community/notification-profil.png" alt="">
+                    </div>
+                    <button class="Log-out">Log Out</button>
+                </div>
+            </div>
         </div>
     </nav>
     <section>
         <aside>
-
+            <img src="images&videos Community/stars.png" alt="stars" class="stars">
+            <div class="container-groups">
+                <button>
+                    Create New Post
+                </button>
+                <h3>My Bowls</h3>
+                <div class="groups">
+                    <img src="images&videos Community/Python.png" alt="">
+                    <p># Python</p>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/php.png" alt="">
+                    <p># Php</p>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/Golang.png" alt="">
+                    <p># Golang</p>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/ruby.png" alt="">
+                    <p># Ruby</p>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/React.png" alt="">
+                    <p># React</p>
+                </div>
+                <img src="images&videos Community/nasa.png" alt="">
+            </div>
         </aside>
         <main>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search for Post or Groups">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="line line-vertical"></div>
+                    <p>find groups</p>
+                    <div class="line line-vertical"></div>
+                    <button>Find Bowls</button>
+                </div>
+            </div>
 
         </main>
         <article>
+            <div class="container-bowls">
+                <h2>Bowls™ for you</h2>
+                <p>Explore All Bowls <i class="fa-solid fa-arrow-right"></i></p>
 
+                <div class="groups">
+                    <img src="images&videos Community/Python-G.png" alt="">
+                    <div>
+                        <p># Python</p>
+                        <p>A bowl for professionals from any industry to ...</p>
+                    </div>
+                </div>
+                <div class="users">
+                    <div>
+                        <img src="images&videos Community/user.png" alt="">
+                        <p>8M</p>
+                    </div>
+                    <div class="btn">
+                        <button>View</button>
+                        <button>Join</button>
+                    </div>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/php-G.png" alt="">
+                    <div>
+                        <p># Php</p>
+                        <p>A bowl for professionals from any industry to ...</p>
+                    </div>
+                </div>
+                <div class="users">
+                    <div>
+                        <img src="images&videos Community/user.png" alt="">
+                        <p>8M</p>
+                    </div>
+                    <div class="btn">
+                        <button>View</button>
+                        <button>Join</button>
+                    </div>
+                </div>
+                <div class="groups">
+                    <img src="images&videos Community/Golang-G.png" alt="">
+                    <div>
+                        <p># Golang</p>
+                        <p>A bowl for professionals from any industry to ...</p>
+                    </div>
+                </div>
+                <div class="users">
+                    <div>
+                        <img src="images&videos Community/user.png" alt="">
+                        <p>8M</p>
+                    </div>
+                    <div class="btn">
+                        <button>View</button>
+                        <button>Join</button>
+                    </div>
+                </div>
+
+                <div class="groups">
+                    <img src="images&videos Community/ruby-G.png" alt="">
+                    <div>
+                        <p># Ruby</p>
+                        <p>A bowl for professionals from any industry to ...</p>
+                    </div>
+                </div>
+                <div class="users">
+                    <div>
+                        <img src="images&videos Community/user.png" alt="">
+                        <p>8M</p>
+                    </div>
+                    <div class="btn">
+                        <button>View</button>
+                        <button>Join</button>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
     <footer>
         <div class="logo-footer">
-            <img src="images&videos Community/logo2.png" alt="">
+            <img src="images&videos Community/logo2.png" alt="" >
+            <img src="images&videos Community/logo-footer.png" alt="logo-footer-mobile">
         </div>
         <div class="down">
             <div class="store">
@@ -65,7 +196,7 @@
                     <p>+212 71 23 65 30</p>
                 </div>
             </div>
-            
+
         </div>
         <div class="pages-parent">
             <h3>Pages</h3>
@@ -80,6 +211,8 @@
             <img src="images&videos Community/stars-footer.png" alt="">
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
