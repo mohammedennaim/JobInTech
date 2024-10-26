@@ -110,10 +110,12 @@ section{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 10vh 60vh;
+    
+    padding: 1% 0.5% 0 0;
 }
 aside {
-    height: 70vh;
-    padding: 3% 15%;
+    height: 70.2vh;
+    padding: 0 15% 3% 15%;
     display: grid;
     overflow-y: auto;
 }
@@ -178,13 +180,144 @@ main{
     grid-template-columns: 45% 1px 20% 1px 25%;
     justify-content: space-evenly;
 }
-input{
-    padding-left: 10%;
+input#search{
+    padding-left: 5%;
+    background-color: black;
+}
+.search div{
+    position: relative;
+    top: -30px;
+    display: grid;
+    align-items: center;
+    color: white;
+    border: none;
+}
+.line{
+    /* border: 1px solid grey; */
+    height: 20px;
+    position: absolute;
+    top: 55px;
+}
+.search button{
+    background-color: #70FF4D;
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    position: relative;
+    right: -5px;
+    top: -0.5px;
 }
 
+.content-main{
+    height: 61.5vh;
+    width: 100%;
+    position: relative;
+    top: -10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.content-1{
+    display: grid;
+    grid-template-columns: auto 93% auto;
+}
+.content-1 img{
+    position: relative;
+    left: 13px;
+    width: 40px;
+}
+.content-1 input{
+    padding: 10px;
+    margin-left: 30px;
+    background-color: #d9d9d95a;
+    border: none;
+}
+.content-1 div{
+    width: 60px;
+    height: 25px;
+    background-color: #20A7D1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -70px;
+    top: 8px;
+    border-radius: 3px;
+    color: white;
+}
+.line-main{
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+.content-2{
+    display: grid;
+    grid-template-columns: auto 75% 20%;
+    margin-top: 10px;
+
+}
+.content-2 img{
+    position: relative;
+    /* top: 0px; */
+    left: 13px;
+    width: 40px;
+}
+.content-2 div:first-of-type{
+    padding-left: 5%;
+}
+.content-2 div:last-of-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 7%;
+    padding-right: 10px;
+}
+.content-2 div:first-of-type p:first-child{
+    margin-top: 5px;
+}
+.content-2 div:first-of-type p:last-child{
+    font-size: 12px;
+}
+.content-2 div:last-of-type button{
+    background-color: #70FF4D;
+    border: none;
+    width: 85px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.content-post{
+    width: 100%;
+    padding: 0 2%;
+}
+.content-post p{
+    margin: 10px 0;
+}
+.content-post p span{
+    color: grey;
+}
+.content-post iframe{
+    width: 100%;
+}
+.comment{
+    width: 99.9%;
+    height: 40px;
+    border:1px solid grey ;
+    border-top: none;
+    position: relative;
+    top: -2.9px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 1fr auto auto;
+    align-items: center;
+    gap: 7px;
+    padding: 0 10px;
+    border-radius: 0 0 5px 5px;
+}
 article {
-    height: 70vh;
-    margin: 3% 2% 0 0;
+    height: 69vh;
     padding: 2% 0 0 5%;
     border: 1px solid grey ;
     border-radius: 5px;
@@ -251,7 +384,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-    height: 20vh;
+    /* height: 12vh; */
     background-color: white;
     border-top: 1px solid rgba(161, 158, 158, 0.8);
 }
@@ -263,16 +396,22 @@ footer .logo-footer{
     background-color: white;
 }
 footer .logo-footer img{
-    height: 70%;
+    
+    height: 60%;
+    position: relative;
+    top: -20px;
+}
+footer .down{
+    background-color: white;
 }
 
 footer .down .store {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 7% 10%;
+    padding: 6% 10%;
 }
 footer .down .store img{
-    width: 50%;
+    width: 40%;
 }
 
 footer .down .social{
@@ -280,6 +419,7 @@ footer .down .social{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     padding-left: 9%;
+    height: 25px;
     position: relative;
     top: -15px;
 }
@@ -299,6 +439,10 @@ footer .logo-footer img:nth-of-type(2){
 footer .down .social div:nth-of-type(3),footer .down .social div:nth-of-type(4){
     margin-top: 10px;
 }
+footer .pages-parent{
+    background-color: white;
+    padding-left: 50px;
+}
 footer .pages-parent h3{
     display: grid;
     padding: 7% 10%;
@@ -317,9 +461,12 @@ footer .stars-footer{
     display: grid;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: -4%;
+    background-color: white;
+    
+    
 }
 footer .stars-footer img{
-    height: 80%;
+    height: 60%;
+    position: relative;
+    top: -15px;
 }
