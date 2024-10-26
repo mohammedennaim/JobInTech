@@ -365,6 +365,16 @@ footer .stars-footer {
 footer .stars-footer img {
   height: 80%;
 }
+button:hover{
+  transform: scale(1.1);
+  
+}
+.top-companies:hover,input:hover,.companies_top:hover,.des-companies:hover,.job_type label:hover{
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.228);
+  border: none;
+}
+
+
 /* --------------------------------------parti mobil -----------------------------------*/
 @media (max-width:550px) {
    nav{
