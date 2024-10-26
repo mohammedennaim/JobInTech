@@ -451,9 +451,7 @@ button:hover{
 
 /* --------------------------------------parti mobil -----------------------------------*/
 @media (max-width:550px) {
-   nav{
-    display: none;
-   }
+  
    .bar_de_recherche{
     flex-direction: column;
    }
