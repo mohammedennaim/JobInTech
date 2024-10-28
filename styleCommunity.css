@@ -301,6 +301,8 @@ input#search{
 }
 .content-post iframe{
     width: 100%;
+    border: 1px solid grey;
+    border-bottom: none;
 }
 .comment{
     width: 99.9%;
