@@ -10,7 +10,7 @@ body{
 nav{
     position: relative;
     display: grid;
-    grid-template-columns: 29fr 1fr ;
+    grid-template-columns: 1fr 4fr 200px;
     background-color: black;
     padding: 0 5% 0 2%;
     align-items: center;
@@ -19,31 +19,12 @@ nav{
 #logo{
     position: relative;
 }
-
-.berger-menu{
-    background-color: rgb(72, 243, 72);
-    height: 25px;
-}
-.berger-menu ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-    cursor: pointer;
-}
-.berger-menu ul li:hover{
-    line-height: 10px;
-    border-bottom: 2px solid white;
-}
 nav ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
     padding: 0 20%;
     position: relative;
-    display: none;
 }
 nav ul li{
     list-style: none;
@@ -61,7 +42,6 @@ nav div:nth-of-type(1){
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 10px;
-  
 }
 nav div p{
     color: white;
@@ -69,14 +49,59 @@ nav div p{
 .location{
     display: grid;
     gap: 10px;
-    display: none;
-}
-.location p , .location img {
-    display: none;
 }
 nav ul li:hover{
     line-height: 10px;
     border-bottom: 2px solid white;
+}
+#user{
+    z-index: 100;
+    position: relative;
+}
+#profil{
+    position: relative;
+    top: -15px;
+    left: -200px;
+    height: 130px;
+    width: 255px;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    padding: 30px 10px 10px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#profil .profil-container .profil-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#profil .profil-container .profil-content p{
+    color: black;
+}
+#profil .profil-container .profil-content .user,#profil .profil-container .profil-content .local{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+}
+
+#profil .profil-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#profil .profil-container img:last-child{
+    width: 30px;
+    position: relative;
+    left: -14px;
+}
+.Log-out{
+    background-color: #70FF4D;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 90px;
 }
 .branding{
     display: flex;
