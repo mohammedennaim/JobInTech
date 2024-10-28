@@ -479,8 +479,7 @@ nav ul li:hover {
     text-align: left;
     margin-bottom: 20px;
 }
-
-/* .card-aid button {
+.card-aid button {
     background-color: #70FF4D;
     border: none;
     border-radius: 5px;
@@ -498,7 +497,7 @@ nav ul li:hover {
     height: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-} */
+}
 /* meeeeddddiiiiaaaaaa */
 @media only screen and (min-width: 992px) {
     #aider h3 {
@@ -690,16 +689,6 @@ nav ul li:hover {
     line-height: 15px;
     position: relative;
 }
-
-/* .icones {
-    background-color: brown;
-    display:flex;
-    flex-direction: column;
-    display: inline-block;
-    width: 5%;
-    position:relative;
-    left: 95%;
-} */
 .icones {
     position: absolute;
     width: 5%;
@@ -770,4 +759,47 @@ nav ul li:hover {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+}
+/* meeeeddddiiiiaaaaaa */
+@media only screen and (min-width: 992px) {
+    .nav {
+        background-color: #f4f4f4;
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav h4 {
+        font-size: 35px;
+    }
+    .emploi h4 {
+        font-size: 30px;
+        padding: 30px;
+    }
+    #show-more {
+        margin: 50px 0 40px 0;
+    }
+    #show-more button{
+        font-size: 25px;
+        padding: 15px 40px;
+    }
+    .cards-offr{
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .card-offr {
+        font-size: 20px;
+        padding: 25px;
+        line-height: 15px;
+        position: relative;
+        width: 520px;
+    }
+    .card-offr h5 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .card-offr p {
+        font-size: 20px;
+        padding: 5px 0;
+        line-height: 25px;
+    }
 }
