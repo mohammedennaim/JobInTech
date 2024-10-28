@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="employees.css">
+
 </head>
 <body>
     <nav>
@@ -16,14 +17,23 @@
             <li>Employers</li>
         </ul>
         <div>
-            <div class="location" id="lolo">
-            <img src="images&videos Community/location.png" alt="">
-            <p>Youssoufia,MR</p>
-        </div>
-        <img src="images&videos Community/notification.png" alt="">
-        <img src="images&videos Community/user.png" alt="">
-        </div>
+            <div class="location">
+                <img src="images&videos Community/location.png" alt="">
+                <p>Youssoufia,MR</p>
+            </div>
+            <img src="images&videos Community/notification.png" alt="">
+            <img src="images&videos Community/photo-user.png" alt="Photo User" id="user">
+        </div> 
+        
     </nav>
+    <div class="berger-menu" id="berger-menu">
+        <ul>
+            <li>FindJob</li>
+            <li>Community</li>
+            <li>Companies</li>
+            <li>Employers</li>
+        </ul>
+    </div>
     <section class="branding">
         <div class="text">
             <h1>Your Employer Brand Starts Here.</h1>
@@ -87,29 +97,29 @@
     </section>
     <footer>
         <div class="logo-footer">
-            <img src="images&videos Community/logo2.png" alt="">
+            <img src="images&videos Community/logo2.png" alt="Horison" loading="lazy" >
         </div>
         <div class="down">
             <div class="store">
                 <h3>Download the App</h3>
-                <img src="images&videos Community/Google Play.png" alt="">
-                <img src="images&videos Community/App Store.png" alt="">
+                <img src="images&videos Community/Google Play.png" alt="Google Play" loading="lazy">
+                <img src="images&videos Community/App Store.png" alt="App Store" loading="lazy">
             </div>
             <div class="social">
                 <div class="facebook">
-                    <img src="images&videos Community/Facebook.png" alt="">
+                    <img src="images&videos Community/Facebook.png" alt="facebook" loading="lazy">
                     <p># Horison</p>
                 </div>
                 <div class="instagram">
-                    <img src="images&videos Community/Instagram.png" alt="">
+                    <img src="images&videos Community/Instagram.png" alt="Instagram" loading="lazy">
                     <p>@ Horison</p>
                 </div>
                 <div class="twitter">
-                    <img src="images&videos Community/TwitterX.png" alt="">
+                    <img src="images&videos Community/TwitterX.png" alt="TwitterX" loading="lazy">
                     <p># Horison</p>
                 </div>
                 <div class="whatsapp">
-                    <img src="images&videos Community/WhatsApp.png" alt="">
+                    <img src="images&videos Community/WhatsApp.png" alt="whatsapp" loading="lazy">
                     <p>+212 71 23 65 30</p>
                 </div>
             </div>
@@ -125,8 +135,19 @@
             </div>
         </div>
         <div class="stars-footer">
-            <img src="images&videos Community/stars-footer.png" alt="">
+            <img src="images&videos Community/stars-footer.png" alt="" loading="lazy">
         </div>
     </footer>
+    <script>
+        let user = document.getElementById("user")
+        let berger = document.getElementById("berger-menu")
+        console.log(berger)
+        user.addEventListener('click',()=> {
+            if(berger.style.display == "block"){
+                berger.style.display = "none";
+            } else  berger.style.display = "block";
+        }
+        )
+    </script>
 </body>
 </html>
